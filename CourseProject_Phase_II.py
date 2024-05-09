@@ -68,9 +68,9 @@ def printTotals(empTotals):
 if __name__ == "__main__":
     empDetaillist = []
     empTotals = {}
-    while Ture:
+    while True:
         empName = getEmpName()
-        if (empName.lower() == "end"
+        if (empName.lower() == "end"):
             break
         fromDate, endDate = getDatesWorked()
         hours =getHoursWorked()
@@ -84,8 +84,8 @@ if __name__ == "__main__":
         empDetail.insert(4, hourlyRate)
         empDetail.insert(5, taxRate)
         empDetailList.append(empDetail)
-     printInfo(empDetailsList)
-     printTotals(empTotals)
+    printInfo(empDetailsList)
+    printTotals(empTotals)
               
     
    
